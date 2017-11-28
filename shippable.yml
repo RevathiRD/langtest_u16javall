@@ -19,10 +19,10 @@ env:
     - ENV1: "boo"
     - ENV2: "car"
 
-#matrix:
-#  exclude:
- #   - jdk: oraclejdk9
-  #    env: ENV1=foo ENV2=bar
+matrix:
+  exclude:
+    - jdk: oraclejdk9
+      env: ENV1=foo ENV2=bar
 build:
    
 
