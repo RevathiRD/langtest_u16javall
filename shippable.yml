@@ -1,8 +1,7 @@
 # Language setting
 language: java
-env:
-  global:
-    - test=foo1
+
+
 
 # Version number
 jdk:
@@ -11,9 +10,15 @@ jdk:
   #- openjdk9
   - oraclejdk8
   - oraclejdk9
-matrix:
-  exclude:
-    - jdk: oraclejdk8
+env:
+  global:
+    - ENVG: "goo"
+  matrix:
+    - ENV1: "foo"
+      ENV2: "bar"
+    - ENV1: "boo"
+      ENV2: "car"
+
   
 build:
    
