@@ -13,7 +13,7 @@ jdk:
   - oraclejdk9
 matrix:
   exclude:
-    - oraclejdk8
+    - jdk: oraclejdk8
   
 build:
    
