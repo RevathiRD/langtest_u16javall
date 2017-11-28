@@ -22,7 +22,8 @@ env:
 matrix:
   exclude:
     - jdk: oraclejdk9
-      env: ENV1=foo #ENV2=bar
+      env:
+        - ENV1=foo ENV2=bar
 build:
    
 
