@@ -24,6 +24,10 @@ matrix:
     - jdk: oraclejdk9
       env:
         - ENV1=foo ENV2=bar
+  include:
+    - jdk: openjdk8
+      env:
+        - TEST=add
 build:
    
 
